@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Calculator"
+        tools:targetApi="31">
+        <activity
+            android:name=".ImageCal"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpeedTrans"
+            android:exported="false" />
+        <activity
+            android:name=".AngleTrans"
+            android:exported="false" />
+        <activity
+            android:name=".LengthTrans"
+            android:exported="false" />
+        <activity
+            android:name=".ExchangeTrans"
+            android:exported="false" />
+        <activity
+            android:name=".DataTrans"
+            android:exported="false" />
+        <activity
+            android:name=".AreaTrans"
+            android:exported="false" />
+        <activity
+            android:name=".WeightTrans"
+            android:exported="false" />
+        <activity
+            android:name=".TimeTrans"
+            android:exported="false" />
+        <activity
+            android:name=".ProgrammerCal"
+            android:exported="false" />
+        <activity
+            android:name=".TempTrans"
+            android:exported="false" />
+        <activity
+            android:name=".DefaultCal"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Calculator"
+            android:screenOrientation="portrait"
+        />
+    </application>
+
+</manifest>
